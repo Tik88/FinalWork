@@ -1,0 +1,54 @@
+﻿<Window x:Class="FinalWork.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FinalWork"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="500" Width="400">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <TextBox Name="text" Grid.Row="0" Grid.ColumnSpan="4" FontSize="25" FontFamily="Times New Roman" Margin="10" Padding="25" UseLayoutRounding="False"/>
+        <Button Grid.Row="1" Grid.Column="0" FontSize="25" FontFamily="Times New Roman" Background="#FFF77373">(</Button>
+        <Button Grid.Row="1" Grid.Column="1" FontSize="25" FontFamily="Times New Roman" Background="#FFF77373">)</Button>
+        <Button Grid.Row="1" Grid.Column="2" FontSize="25" FontFamily="Times New Roman" Background="#FFF77373">C</Button>
+        <Button Grid.Row="1" Grid.Column="3" FontSize="25" FontFamily="Times New Roman" Background="#FFF77373">x</Button>
+        <Button Grid.Row="2" Grid.Column="0" FontSize="25" FontFamily="Times New Roman" Background="#FF75F9AB">1</Button>
+        <Button Grid.Row="2" Grid.Column="1" FontSize="25" FontFamily="Times New Roman" Background="#FF75F9AB">2</Button>
+        <Button Grid.Row="2" Grid.Column="2" FontSize="25" FontFamily="Times New Roman" Background="#FF75F9AB">3</Button>
+        <Button Grid.Row="2" Grid.Column="3" FontSize="25" FontFamily="Times New Roman" Background="#FFF77373">+</Button>
+        <Button Grid.Row="3" Grid.Column="0" FontSize="25" FontFamily="Times New Roman" Background="#FF75F9AB">4</Button>
+        <Button Grid.Row="3" Grid.Column="1" FontSize="25" FontFamily="Times New Roman" Background="#FF75F9AB">5</Button>
+        <Button Grid.Row="3" Grid.Column="2" FontSize="25" FontFamily="Times New Roman" Background="#FF75F9AB">6</Button>
+        <Button Grid.Row="3" Grid.Column="3" FontSize="25" FontFamily="Times New Roman" Background="#FFF77373">-</Button>
+        <Button Grid.Row="4" Grid.Column="0" FontSize="25" FontFamily="Times New Roman" Background="#FF75F9AB">7</Button>
+        <Button Grid.Row="4" Grid.Column="1" FontSize="25" FontFamily="Times New Roman" Background="#FF75F9AB">8</Button>
+        <Button Grid.Row="4" Grid.Column="2" FontSize="25" FontFamily="Times New Roman" Background="#FF75F9AB">9</Button>
+        <Button Grid.Row="4" Grid.Column="3" FontSize="25" FontFamily="Times New Roman" Background="#FFF77373">*</Button>
+        <Button Grid.Row="5" Grid.Column="0" FontSize="25" FontFamily="Times New Roman" Background="#FF75F9AB">.</Button>
+        <Button Grid.Row="5" Grid.Column="1" FontSize="25" FontFamily="Times New Roman" Background="#FF75F9AB">0</Button>
+        <Button Grid.Row="5" Grid.Column="2" FontSize="25" FontFamily="Times New Roman">
+            <Button.Background>
+                <RadialGradientBrush>
+                    <GradientStop Color="Black" Offset="1"/>
+                    <GradientStop Color="#FF99F56E"/>
+                    <GradientStop Color="#FE9AFF6C" Offset="0.511"/>
+                </RadialGradientBrush>
+            </Button.Background> =
+        </Button>
+        <Button Grid.Row="5" Grid.Column="3" FontSize="25" FontFamily="Times New Roman" Background="#FFF77373">/</Button>
+    </Grid>
+</Window>
