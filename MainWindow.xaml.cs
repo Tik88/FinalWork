@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -23,7 +24,30 @@ namespace FinalWork
         public MainWindow()
         {
             InitializeComponent();
-
+            foreach(UIElement el in GroupButton.Children)
+            {
+                if (el is Button)
+                {
+                    ((Button)el).Click += ButtonClick;
+                }
+            }
+        }
+        private void ButtonClick (Object sender, RoutedEventArgs e)
+        {
+            string textButton = ((Button)e.OriginalSource).Content.ToString();
+            if (textButton == "C")
+            {
+                text.Clear();
+            }
+            else if (textButton == "x")
+            {
+                text.Text = text.Text.Substring(text.Text.Length - 1);
+            }
+            else if (textButton == "=")
+            {
+                text.Text = new DataTable().Compute(text.Text, null).ToString();
+            }
+            else text.Text += textButton;
         }
     }
 }

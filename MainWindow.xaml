@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:FinalWork"
         mc:Ignorable="d"
         Title="MainWindow" Height="500" Width="400">
-    <Grid>
+    <Grid Name ="GroupButton">
         <Grid.ColumnDefinitions>
             <ColumnDefinition/>
             <ColumnDefinition/>
@@ -21,7 +21,7 @@
             <RowDefinition/>
             <RowDefinition/>
         </Grid.RowDefinitions>
-        <TextBox Name="text" Grid.Row="0" Grid.ColumnSpan="4" FontSize="25" FontFamily="Times New Roman" Margin="10" Padding="25" UseLayoutRounding="False"/>
+        <TextBox Name="text" Grid.Row="0" Grid.ColumnSpan="4"/>
         <Button Grid.Row="1" Grid.Column="0" FontSize="25" FontFamily="Times New Roman" Background="#FFF77373">(</Button>
         <Button Grid.Row="1" Grid.Column="1" FontSize="25" FontFamily="Times New Roman" Background="#FFF77373">)</Button>
         <Button Grid.Row="1" Grid.Column="2" FontSize="25" FontFamily="Times New Roman" Background="#FFF77373">C</Button>
